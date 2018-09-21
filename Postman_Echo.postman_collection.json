@@ -1,14 +1,13 @@
 {
 	"info": {
-		"_postman_id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
-		"name": "Postman Echo",
+		"_postman_id": "bac4dfce-2a71-47a3-8b0c-f0438f6f8ad2",
+		"name": "BelajarAPI",
 		"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://postman-echo.com](https://postman-echo.com/?source=echo-collection-app-onboarding)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "Auth: Digest",
-			"description": "Digest authentication protects an endpoint with a username and password without actually transmitting the password over network.\nOne has to apply a hash function (like MD5, etc) to the username and password before sending them over the network.\n\n> Username: `postman`\n>\n> Password: `password`\n\nUnlike Basic-Auth, authentication happens using two consecutive requests where the first request returns `401 Unauthorised` along with `WWW-Authenticate` header containing information that needs to be used to authenticate subsequent calls.\n\nTo know more about digest authentication, refer to the [Digest Access Authentication](https://en.wikipedia.org/wiki/Digest_access_authentication) wikipedia article.\nThe article on [authentication helpers](https://www.getpostman.com/docs/helpers#digest-auth) elaborates how to use the same within the Postman app.",
 			"item": [
 				{
 					"name": "DigestAuth Request",
@@ -159,7 +158,10 @@
 								"value": "Digest username=\"postman\", realm=\"Users\", nonce=\"ni1LiL0O37PRRhofWdCLmwFsnEtH1lew\", uri=\"/digest-auth\", response=\"254679099562cf07df9b6f5d8d15db44\", opaque=\"\""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/digest-auth",
 							"protocol": "https",
@@ -175,7 +177,6 @@
 					},
 					"response": [
 						{
-							"id": "8f173d65-457d-4262-8749-67bb61dbbed8",
 							"name": "200",
 							"originalRequest": {
 								"auth": {
@@ -239,7 +240,10 @@
 										"value": "Digest username=\"postman\", realm=\"Users\", nonce=\"ni1LiL0O37PRRhofWdCLmwFsnEtH1lew\", uri=\"/digest-auth\", response=\"254679099562cf07df9b6f5d8d15db44\", opaque=\"\""
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/digest-auth",
 									"protocol": "https",
@@ -258,75 +262,75 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "42",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 29 Oct 2015 06:17:51 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
@@ -335,11 +339,11 @@
 						}
 					]
 				}
-			]
+			],
+			"description": "Digest authentication protects an endpoint with a username and password without actually transmitting the password over network.\nOne has to apply a hash function (like MD5, etc) to the username and password before sending them over the network.\n\n> Username: `postman`\n>\n> Password: `password`\n\nUnlike Basic-Auth, authentication happens using two consecutive requests where the first request returns `401 Unauthorised` along with `WWW-Authenticate` header containing information that needs to be used to authenticate subsequent calls.\n\nTo know more about digest authentication, refer to the [Digest Access Authentication](https://en.wikipedia.org/wiki/Digest_access_authentication) wikipedia article.\nThe article on [authentication helpers](https://www.getpostman.com/docs/helpers#digest-auth) elaborates how to use the same within the Postman app."
 		},
 		{
 			"name": "Auth: Others",
-			"description": "",
 			"item": [
 				{
 					"name": "Basic Auth",
@@ -388,7 +392,10 @@
 								"value": "Basic cG9zdG1hbjpwYXNzd29yZA=="
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/basic-auth",
 							"protocol": "https",
@@ -404,7 +411,6 @@
 					},
 					"response": [
 						{
-							"id": "ba82e344-012f-4d80-a0ac-cb1454e7795e",
 							"name": "200",
 							"originalRequest": {
 								"auth": {
@@ -439,7 +445,10 @@
 										"value": "Basic cG9zdG1hbjpwYXNzd29yZA=="
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/basic-auth",
 									"protocol": "https",
@@ -458,75 +467,75 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "42",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Sat, 31 Oct 2015 06:38:25 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
@@ -662,148 +671,6 @@
 					},
 					"response": [
 						{
-							"id": "02c9190a-1e7c-4326-9bd8-7a2d799bc809",
-							"name": "200",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"name": "Authorization",
-										"value": "OAuth oauth_consumer_key=\"RKCGzna7bv9YD57c\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1472121261\",oauth_nonce=\"ki0RQW\",oauth_version=\"1.0\",oauth_signature=\"s0rK92Myxx7ceUBVzlMaxiiXU00%3D\""
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "code",
-											"value": "xWnkliVQJURqB2x1",
-											"type": "text"
-										},
-										{
-											"key": "grant_type",
-											"value": "authorization_code",
-											"type": "text"
-										},
-										{
-											"key": "redirect_uri",
-											"value": "https://www.getpostman.com/oauth2/callback",
-											"type": "text"
-										},
-										{
-											"key": "client_id",
-											"value": "abc123",
-											"type": "text"
-										},
-										{
-											"key": "client_secret",
-											"value": "ssh-secret",
-											"type": "text"
-										}
-									]
-								},
-								"url": {
-									"raw": "https://echo.getpostman.com/oauth1",
-									"protocol": "https",
-									"host": [
-										"echo",
-										"getpostman",
-										"com"
-									],
-									"path": [
-										"oauth1"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "javascript",
-							"header": [
-								{
-									"name": "Access-Control-Allow-Credentials",
-									"key": "Access-Control-Allow-Credentials",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Headers",
-									"key": "Access-Control-Allow-Headers",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Methods",
-									"key": "Access-Control-Allow-Methods",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Origin",
-									"key": "Access-Control-Allow-Origin",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Expose-Headers",
-									"key": "Access-Control-Expose-Headers",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Connection",
-									"key": "Connection",
-									"value": "keep-alive",
-									"description": ""
-								},
-								{
-									"name": "Content-Encoding",
-									"key": "Content-Encoding",
-									"value": "gzip",
-									"description": ""
-								},
-								{
-									"name": "Content-Length",
-									"key": "Content-Length",
-									"value": "95",
-									"description": ""
-								},
-								{
-									"name": "Content-Type",
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8",
-									"description": ""
-								},
-								{
-									"name": "Date",
-									"key": "Date",
-									"value": "Thu, 25 Aug 2016 10:34:23 GMT",
-									"description": ""
-								},
-								{
-									"name": "ETag",
-									"key": "ETag",
-									"value": "W/\"4e-Cq3UhvpVSyl6R6204lPVIA\"",
-									"description": ""
-								},
-								{
-									"name": "Server",
-									"key": "Server",
-									"value": "nginx/1.8.1",
-									"description": ""
-								},
-								{
-									"name": "Vary",
-									"key": "Vary",
-									"value": "Accept-Encoding",
-									"description": ""
-								}
-							],
-							"cookie": [],
-							"body": "{\"status\":\"pass\",\"message\":\"OAuth-1.0a signature verification was successful\"}"
-						},
-						{
-							"id": "9691d72b-38ee-4707-b084-778f6471d7d6",
 							"name": "401",
 							"originalRequest": {
 								"method": "GET",
@@ -863,80 +730,220 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Expose-Headers",
 									"key": "Access-Control-Expose-Headers",
 									"value": "",
+									"name": "Access-Control-Expose-Headers",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "536",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 25 Aug 2016 10:34:55 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "ETag",
 									"key": "ETag",
 									"value": "W/\"218-SGnurnTsu5qV5cCYWxsJlg\"",
+									"name": "ETag",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.8.1",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								}
 							],
 							"cookie": [],
 							"body": "{\"status\":\"fail\",\"message\":\"HMAC-SHA1 verification failed\",\"base_uri\":\"https://echo.getpostman.com/oauth1\",\"normalized_param_string\":\"oauth_consumer_key=RKCGzna7bv9YD57c_wrong&oauth_nonce=8LTsU2&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1472121295&oauth_version=1.0\",\"base_string\":\"GET&https%3A%2F%2Fecho.getpostman.com%2Foauth1&oauth_consumer_key%3DRKCGzna7bv9YD57c_wrong%26oauth_nonce%3D8LTsU2%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1472121295%26oauth_version%3D1.0\",\"signing_key\":\"D%2BEdQ-gs%24-%25%402Nu7&\"}"
+						},
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"name": "Authorization",
+										"value": "OAuth oauth_consumer_key=\"RKCGzna7bv9YD57c\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1472121261\",oauth_nonce=\"ki0RQW\",oauth_version=\"1.0\",oauth_signature=\"s0rK92Myxx7ceUBVzlMaxiiXU00%3D\""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "code",
+											"value": "xWnkliVQJURqB2x1",
+											"type": "text"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "text"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "https://www.getpostman.com/oauth2/callback",
+											"type": "text"
+										},
+										{
+											"key": "client_id",
+											"value": "abc123",
+											"type": "text"
+										},
+										{
+											"key": "client_secret",
+											"value": "ssh-secret",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://echo.getpostman.com/oauth1",
+									"protocol": "https",
+									"host": [
+										"echo",
+										"getpostman",
+										"com"
+									],
+									"path": [
+										"oauth1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "javascript",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"name": "Access-Control-Allow-Credentials",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"name": "Access-Control-Allow-Headers",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"name": "Access-Control-Allow-Methods",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"name": "Access-Control-Allow-Origin",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "",
+									"name": "Access-Control-Expose-Headers",
+									"description": ""
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": ""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"name": "Content-Encoding",
+									"description": ""
+								},
+								{
+									"key": "Content-Length",
+									"value": "95",
+									"name": "Content-Length",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": ""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 25 Aug 2016 10:34:23 GMT",
+									"name": "Date",
+									"description": ""
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e-Cq3UhvpVSyl6R6204lPVIA\"",
+									"name": "ETag",
+									"description": ""
+								},
+								{
+									"key": "Server",
+									"value": "nginx/1.8.1",
+									"name": "Server",
+									"description": ""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"name": "Vary",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "{\"status\":\"pass\",\"message\":\"OAuth-1.0a signature verification was successful\"}"
 						}
 					]
 				},
@@ -1049,7 +1056,6 @@
 					},
 					"response": [
 						{
-							"id": "ff8550ac-e3b9-4879-8f17-ad69cf29a581",
 							"name": "Success",
 							"originalRequest": {
 								"method": "GET",
@@ -1105,87 +1111,87 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 31 Mar 2016 11:12:16 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Server-Authorization",
 									"key": "Server-Authorization",
 									"value": "Hawk mac=\"vRrUzDdcHu2NaNts/r4zg2xmXMdX8wPiTGTM398BDRg=\", hash=\"qmtflETMybaZiOQ2dLT17yiRunFT5OCIxZRZ0boQaiE=\"",
+									"name": "Server-Authorization",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								},
 								{
-									"name": "transfer-encoding",
 									"key": "transfer-encoding",
 									"value": "chunked",
+									"name": "transfer-encoding",
 									"description": ""
 								}
 							],
 							"cookie": [
 								{
-									"expires": "Fri Apr 15 2016 17:54:28 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"hostOnly": false,
 									"httpOnly": false,
 									"domain": ".getpostman.com",
@@ -1196,7 +1202,7 @@
 									"key": "getpostmanlogin"
 								},
 								{
-									"expires": "Fri Apr 15 2016 17:54:28 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"hostOnly": false,
 									"httpOnly": false,
 									"domain": ".getpostman.com",
@@ -1226,7 +1232,6 @@
 		},
 		{
 			"name": "Cookies",
-			"description": "The cookie related endpoints allow one to get, set and delete simple cookies.\n\nCookies are small snippets of information that is stored in the browser and sent back to the server with every subsequent requests in order to store useful information between requests.\nIf you want to know more about cookies, read the [HTTP Cookie](https://en.wikipedia.org/wiki/HTTP_cookie) article on wikipedia.",
 			"item": [
 				{
 					"name": "Set Cookies",
@@ -1265,7 +1270,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/cookies/set?foo1=bar1&foo2=bar2",
 							"protocol": "https",
@@ -1292,12 +1300,14 @@
 					},
 					"response": [
 						{
-							"id": "bbcac889-b18b-475e-b6d6-f4eb7e3f4068",
 							"name": "Cookies",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/cookies/set?foo1=bar1&foo2=bar2",
 									"protocol": "https",
@@ -1327,75 +1337,75 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "51",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 29 Oct 2015 06:15:28 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
@@ -1429,7 +1439,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/cookies",
 							"protocol": "https",
@@ -1445,12 +1458,14 @@
 					},
 					"response": [
 						{
-							"id": "6a7ae20e-ad57-4954-a356-19adabcbb006",
 							"name": "Cookies",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/cookies",
 									"protocol": "https",
@@ -1469,251 +1484,75 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "46",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 29 Oct 2015 06:16:29 GMT",
-									"description": ""
-								},
-								{
-									"name": "Server",
-									"key": "Server",
-									"value": "nginx/1.6.2",
-									"description": ""
-								},
-								{
-									"name": "Vary",
-									"key": "Vary",
-									"value": "Accept-Encoding",
-									"description": ""
-								},
-								{
-									"name": "X-Powered-By",
-									"key": "X-Powered-By",
-									"value": "Sails <sailsjs.org>",
-									"description": ""
-								}
-							],
-							"cookie": [],
-							"body": "{\"cookies\":{\"foo2\":\"bar\"}}"
-						}
-					]
-				},
-				{
-					"name": "Delete Cookies",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": [
-									"// handle case where it is 304",
-									"",
-									"if (responseCode.code === 200) {",
-									"    tests[\"Status code is 302 or 200\"] = true;",
-									"    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");",
-									"    ",
-									"    var body = JSON.parse(responseBody);",
-									"    tests[\"Body contains cookie foo1\"] = 'foo1' in body.cookies;",
-									"    tests[\"Body contains cookie foo2\"] = 'foo2' in body.cookies;",
-									"",
-									"}",
-									"else if (responseCode.code === 302) {",
-									"    tests[\"Status code is 302 or 200\"] = true;",
-									"    tests[\"Body has redirection message\"] = responseBody.has(\"Found. Redirecting to /cookies\")",
-									"}",
-									"else {",
-									"    tests[\"Status code is 302 or 200\"] = false;",
-									"}",
-									"",
-									"tests[\"foo1 cookie is set\"] = _.get(postman.getResponseCookie('foo1'), 'value') === undefined;",
-									"",
-									"tests[\"foo2 cookie is set\"] = _.get(postman.getResponseCookie('foo2'), 'value') === undefined;"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {},
-						"url": {
-							"raw": "https://postman-echo.com/cookies/delete?foo1&foo2",
-							"protocol": "https",
-							"host": [
-								"postman-echo",
-								"com"
-							],
-							"path": [
-								"cookies",
-								"delete"
-							],
-							"query": [
-								{
-									"key": "foo1",
-									"value": ""
-								},
-								{
-									"key": "foo2",
-									"value": ""
-								}
-							]
-						},
-						"description": "One or more cookies that has been set for this domain can be deleted by providing the cookie names as part of the URL parameter. The response of this request is a JSON containing the list of currently set cookies."
-					},
-					"response": [
-						{
-							"id": "3cef32a8-8a38-45b7-9d99-30de2613b2b1",
-							"name": "Cookies Response",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {},
-								"url": {
-									"raw": "https://postman-echo.com/cookies/delete?foo1&foo2",
-									"protocol": "https",
-									"host": [
-										"postman-echo",
-										"com"
-									],
-									"path": [
-										"cookies",
-										"delete"
-									],
-									"query": [
-										{
-											"key": "foo1",
-											"value": ""
-										},
-										{
-											"key": "foo2",
-											"value": ""
-										}
-									]
-								},
-								"description": "One or more cookies that has been set for this domain can be deleted by providing the cookie names as part of the URL parameter. The response of this request is a JSON containing the list of currently set cookies."
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "javascript",
-							"header": [
-								{
-									"name": "Access-Control-Allow-Credentials",
-									"key": "Access-Control-Allow-Credentials",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Headers",
-									"key": "Access-Control-Allow-Headers",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Methods",
-									"key": "Access-Control-Allow-Methods",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Access-Control-Allow-Origin",
-									"key": "Access-Control-Allow-Origin",
-									"value": "",
-									"description": ""
-								},
-								{
-									"name": "Connection",
-									"key": "Connection",
-									"value": "keep-alive",
-									"description": ""
-								},
-								{
-									"name": "Content-Encoding",
-									"key": "Content-Encoding",
-									"value": "gzip",
-									"description": ""
-								},
-								{
-									"name": "Content-Length",
-									"key": "Content-Length",
-									"value": "46",
-									"description": ""
-								},
-								{
-									"name": "Content-Type",
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8",
-									"description": ""
-								},
-								{
 									"name": "Date",
-									"key": "Date",
-									"value": "Thu, 29 Oct 2015 06:16:00 GMT",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
@@ -1722,11 +1561,11 @@
 						}
 					]
 				}
-			]
+			],
+			"description": "The cookie related endpoints allow one to get, set and delete simple cookies.\n\nCookies are small snippets of information that is stored in the browser and sent back to the server with every subsequent requests in order to store useful information between requests.\nIf you want to know more about cookies, read the [HTTP Cookie](https://en.wikipedia.org/wiki/HTTP_cookie) article on wikipedia."
 		},
 		{
 			"name": "Headers",
-			"description": "The following set of endpoints allow one to see the headers being sent as part of a request and to get a custom set of headers as part of response.\n\nHTTP header fields provide required information about the request or response, or about the object sent in the message body. Both request headers and response headers can be controlled using these endpoints.",
 			"item": [
 				{
 					"name": "Request Headers",
@@ -1760,7 +1599,10 @@
 								"value": "Lorem ipsum dolor sit amet"
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/headers",
 							"protocol": "https",
@@ -1776,18 +1618,19 @@
 					},
 					"response": [
 						{
-							"id": "345d379c-6d3c-487a-9d0c-b169942d1735",
 							"name": "my-sample-header",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "my-sample-header",
-										"value": "Lorem ipsum dolor sit amet",
-										"enabled": true
+										"value": "Lorem ipsum dolor sit amet"
 									}
 								],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://echo.getpostman.com/headers",
 									"protocol": "https",
@@ -1806,75 +1649,75 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "342",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 31 Mar 2016 11:14:00 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
@@ -1912,7 +1755,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/response-headers?Content-Type=text/html&test=response_headers",
 							"protocol": "https",
@@ -1938,12 +1784,14 @@
 					},
 					"response": [
 						{
-							"id": "84e8b253-b0f9-4eb3-bdf9-cd50e1e5aa72",
 							"name": "Response headers",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://echo.getpostman.com/response-headers?Content-Type=text/html&test=response_headers",
 									"protocol": "https",
@@ -1972,81 +1820,81 @@
 							"_postman_previewlanguage": "html",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Encoding",
 									"key": "Content-Encoding",
 									"value": "gzip",
+									"name": "Content-Encoding",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "71",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "text/html; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 31 Mar 2016 11:14:18 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								},
 								{
-									"name": "test",
 									"key": "test",
 									"value": "response_headers",
+									"name": "test",
 									"description": ""
 								}
 							],
@@ -2067,11 +1915,11 @@
 						}
 					]
 				}
-			]
+			],
+			"description": "The following set of endpoints allow one to see the headers being sent as part of a request and to get a custom set of headers as part of response.\n\nHTTP header fields provide required information about the request or response, or about the object sent in the message body. Both request headers and response headers can be controlled using these endpoints."
 		},
 		{
 			"name": "Request Methods",
-			"description": "HTTP has multiple request \"verbs\", such as `GET`, `PUT`, `POST`, `DELETE`,\n`PATCH`, `HEAD`, etc. \n\nAn HTTP Method (verb) defines how a request should be interpreted by a server. \nThe endpoints in this section demonstrate various HTTP Verbs. Postman supports \nall the HTTP Verbs, including some rarely used ones, such as `PROPFIND`, `UNLINK`, \netc.\n\nFor details about HTTP Verbs, refer to [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)\n",
 			"item": [
 				{
 					"name": "GET Request",
@@ -2105,7 +1953,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/get?test=123",
 							"protocol": "https",
@@ -2385,11 +2236,11 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "HTTP has multiple request \"verbs\", such as `GET`, `PUT`, `POST`, `DELETE`,\n`PATCH`, `HEAD`, etc. \n\nAn HTTP Method (verb) defines how a request should be interpreted by a server. \nThe endpoints in this section demonstrate various HTTP Verbs. Postman supports \nall the HTTP Verbs, including some rarely used ones, such as `PROPFIND`, `UNLINK`, \netc.\n\nFor details about HTTP Verbs, refer to [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)\n"
 		},
 		{
 			"name": "Utilities",
-			"description": "",
 			"item": [
 				{
 					"name": "Response Status Code",
@@ -2415,7 +2266,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/status/200",
 							"protocol": "https",
@@ -2432,12 +2286,14 @@
 					},
 					"response": [
 						{
-							"id": "3727ab55-0216-4a0c-a280-6dae30a57b9f",
 							"name": "200",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://echo.getpostman.com/status/200",
 									"protocol": "https",
@@ -2457,81 +2313,81 @@
 							"_postman_previewlanguage": "javascript",
 							"header": [
 								{
-									"name": "Access-Control-Allow-Credentials",
 									"key": "Access-Control-Allow-Credentials",
 									"value": "",
+									"name": "Access-Control-Allow-Credentials",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Headers",
 									"key": "Access-Control-Allow-Headers",
 									"value": "",
+									"name": "Access-Control-Allow-Headers",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Methods",
 									"key": "Access-Control-Allow-Methods",
 									"value": "",
+									"name": "Access-Control-Allow-Methods",
 									"description": ""
 								},
 								{
-									"name": "Access-Control-Allow-Origin",
 									"key": "Access-Control-Allow-Origin",
 									"value": "",
+									"name": "Access-Control-Allow-Origin",
 									"description": ""
 								},
 								{
-									"name": "Connection",
 									"key": "Connection",
 									"value": "keep-alive",
+									"name": "Connection",
 									"description": ""
 								},
 								{
-									"name": "Content-Length",
 									"key": "Content-Length",
 									"value": "14",
+									"name": "Content-Length",
 									"description": ""
 								},
 								{
-									"name": "Content-Type",
 									"key": "Content-Type",
 									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
 									"description": ""
 								},
 								{
-									"name": "Date",
 									"key": "Date",
 									"value": "Thu, 31 Mar 2016 11:58:47 GMT",
+									"name": "Date",
 									"description": ""
 								},
 								{
-									"name": "ETag",
 									"key": "ETag",
 									"value": "W/\"e-1056260003\"",
+									"name": "ETag",
 									"description": ""
 								},
 								{
-									"name": "Server",
 									"key": "Server",
 									"value": "nginx/1.6.2",
+									"name": "Server",
 									"description": ""
 								},
 								{
-									"name": "Vary",
 									"key": "Vary",
 									"value": "Accept-Encoding",
+									"name": "Vary",
 									"description": ""
 								},
 								{
-									"name": "X-Powered-By",
 									"key": "X-Powered-By",
 									"value": "Sails <sailsjs.org>",
+									"name": "X-Powered-By",
 									"description": ""
 								}
 							],
 							"cookie": [
 								{
-									"expires": "Fri Apr 15 2016 18:14:58 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"hostOnly": false,
 									"httpOnly": false,
 									"domain": ".getpostman.com",
@@ -2542,7 +2398,7 @@
 									"key": "getpostmanlogin"
 								},
 								{
-									"expires": "Fri Apr 15 2016 18:14:58 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"hostOnly": false,
 									"httpOnly": false,
 									"domain": ".getpostman.com",
@@ -2553,7 +2409,7 @@
 									"key": "postman.sid"
 								},
 								{
-									"expires": "Sat Mar 31 2018 18:16:21 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"hostOnly": false,
 									"httpOnly": false,
 									"domain": ".echo.getpostman.com",
@@ -2580,41 +2436,6 @@
 					]
 				},
 				{
-					"name": "Streamed Response",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": [
-									"tests[\"response code is 200\"] = responseCode.code === 200;",
-									"tests[\"response is sent in chunks\"] = (postman.getResponseHeader('Transfer-Encoding') === 'chunked')",
-									""
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {},
-						"url": {
-							"raw": "https://postman-echo.com/stream/10",
-							"protocol": "https",
-							"host": [
-								"postman-echo",
-								"com"
-							],
-							"path": [
-								"stream",
-								"10"
-							]
-						},
-						"description": "This endpoint allows one to recieve streaming http response using [chunked transfer encoding](https://en.wikipedia.org/wiki/Chunked_transfer_encoding) of a configurable length.\n\nA streaming response does not wait for the entire response to be generated on server before flushing it out. This implies that for a fairly large response, parts of it can be streamed to the requestee as and when it is generated on server. The client can then take actions of processing this partially received data."
-					},
-					"response": []
-				},
-				{
 					"name": "Delay Response",
 					"event": [
 						{
@@ -2637,7 +2458,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/delay/3",
 							"protocol": "https",
@@ -2654,12 +2478,14 @@
 					},
 					"response": [
 						{
-							"id": "e2253696-536b-49ec-8ffe-49ad5547a1f7",
 							"name": "success-response",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://echo.getpostman.com/delay/3",
 									"protocol": "https",
@@ -2753,7 +2579,7 @@
 							],
 							"cookie": [
 								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"httpOnly": true,
 									"domain": "echo.getpostman.com",
 									"path": "/",
@@ -2782,7 +2608,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/encoding/utf8",
 							"protocol": "https",
@@ -2824,7 +2653,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/gzip",
 							"protocol": "https",
@@ -2867,7 +2699,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/deflate",
 							"protocol": "https",
@@ -2902,7 +2737,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/ip",
 							"protocol": "https",
@@ -2922,7 +2760,6 @@
 		},
 		{
 			"name": "Utilities / Date and Time",
-			"description": "A set of `/time/*` mounted requests to perform date-time manipulations, among other operations.\n",
 			"item": [
 				{
 					"name": "Current UTC time",
@@ -2942,7 +2779,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/now",
 							"protocol": "https",
@@ -2959,12 +2799,14 @@
 					},
 					"response": [
 						{
-							"id": "0e22b3d5-4668-4a86-a5c8-396ac7c74ead",
 							"name": "time as text",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/time/now",
 									"protocol": "https",
@@ -3069,7 +2911,7 @@
 							],
 							"cookie": [
 								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"httpOnly": true,
 									"domain": "postman-echo.com",
 									"path": "/",
@@ -3102,7 +2944,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/valid?timestamp=2016-10-10",
 							"protocol": "https",
@@ -3125,134 +2970,14 @@
 					},
 					"response": [
 						{
-							"id": "feeb051f-a7fa-462d-a497-95e4b32454e4",
-							"name": "Invalid Timestamp",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {},
-								"url": {
-									"raw": "https://postman-echo.com/time/valid?timestamp=2016-10-10",
-									"protocol": "https",
-									"host": [
-										"postman-echo",
-										"com"
-									],
-									"path": [
-										"time",
-										"valid"
-									],
-									"query": [
-										{
-											"key": "timestamp",
-											"value": "2016-10-10"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Access-Control-Allow-Credentials",
-									"value": "",
-									"name": "Access-Control-Allow-Credentials",
-									"description": ""
-								},
-								{
-									"key": "Access-Control-Allow-Headers",
-									"value": "",
-									"name": "Access-Control-Allow-Headers",
-									"description": ""
-								},
-								{
-									"key": "Access-Control-Allow-Methods",
-									"value": "",
-									"name": "Access-Control-Allow-Methods",
-									"description": ""
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "",
-									"name": "Access-Control-Allow-Origin",
-									"description": ""
-								},
-								{
-									"key": "Access-Control-Expose-Headers",
-									"value": "",
-									"name": "Access-Control-Expose-Headers",
-									"description": ""
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive",
-									"name": "Connection",
-									"description": ""
-								},
-								{
-									"key": "Content-Length",
-									"value": "15",
-									"name": "Content-Length",
-									"description": ""
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8",
-									"name": "Content-Type",
-									"description": ""
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 11 Jan 2017 10:27:53 GMT",
-									"name": "Date",
-									"description": ""
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"f-/i9mO/upK91ZtL0BkKFGtw\"",
-									"name": "ETag",
-									"description": ""
-								},
-								{
-									"key": "Server",
-									"value": "nginx/1.10.1",
-									"name": "Server",
-									"description": ""
-								},
-								{
-									"key": "Vary",
-									"value": "Accept-Encoding",
-									"name": "Vary",
-									"description": ""
-								},
-								{
-									"key": "set-cookie",
-									"value": "sails.sid=s%3ATNJaNxi2QCv4RPBb64sIZxQGN1h6IP3g.9sQVAijlsLsh0r7LgffxXa9k2we6UumPEVv%2Bsk4woLI; Path=/; HttpOnly",
-									"name": "set-cookie",
-									"description": ""
-								}
-							],
-							"cookie": [
-								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
-									"httpOnly": true,
-									"domain": "postman-echo.com",
-									"path": "/",
-									"secure": false,
-									"value": "s%3ATNJaNxi2QCv4RPBb64sIZxQGN1h6IP3g.9sQVAijlsLsh0r7LgffxXa9k2we6UumPEVv%2Bsk4woLI",
-									"key": "sails.sid"
-								}
-							],
-							"body": "{\"valid\":false}"
-						},
-						{
-							"id": "8ea3f06c-bc6e-48c2-b1a3-4649039cec8f",
 							"name": "Valid Timestamp",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {},
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
 								"url": {
 									"raw": "https://postman-echo.com/time/valid?timestamp=2016-10-10",
 									"protocol": "https",
@@ -3357,7 +3082,7 @@
 							],
 							"cookie": [
 								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"httpOnly": true,
 									"domain": "postman-echo.com",
 									"path": "/",
@@ -3367,6 +3092,130 @@
 								}
 							],
 							"body": "{\"valid\":true}"
+						},
+						{
+							"name": "Invalid Timestamp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://postman-echo.com/time/valid?timestamp=2016-10-10",
+									"protocol": "https",
+									"host": [
+										"postman-echo",
+										"com"
+									],
+									"path": [
+										"time",
+										"valid"
+									],
+									"query": [
+										{
+											"key": "timestamp",
+											"value": "2016-10-10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"name": "Access-Control-Allow-Credentials",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"name": "Access-Control-Allow-Headers",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"name": "Access-Control-Allow-Methods",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"name": "Access-Control-Allow-Origin",
+									"description": ""
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "",
+									"name": "Access-Control-Expose-Headers",
+									"description": ""
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": ""
+								},
+								{
+									"key": "Content-Length",
+									"value": "15",
+									"name": "Content-Length",
+									"description": ""
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": ""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 11 Jan 2017 10:27:53 GMT",
+									"name": "Date",
+									"description": ""
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f-/i9mO/upK91ZtL0BkKFGtw\"",
+									"name": "ETag",
+									"description": ""
+								},
+								{
+									"key": "Server",
+									"value": "nginx/1.10.1",
+									"name": "Server",
+									"description": ""
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"name": "Vary",
+									"description": ""
+								},
+								{
+									"key": "set-cookie",
+									"value": "sails.sid=s%3ATNJaNxi2QCv4RPBb64sIZxQGN1h6IP3g.9sQVAijlsLsh0r7LgffxXa9k2we6UumPEVv%2Bsk4woLI; Path=/; HttpOnly",
+									"name": "set-cookie",
+									"description": ""
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"httpOnly": true,
+									"domain": "postman-echo.com",
+									"path": "/",
+									"secure": false,
+									"value": "s%3ATNJaNxi2QCv4RPBb64sIZxQGN1h6IP3g.9sQVAijlsLsh0r7LgffxXa9k2we6UumPEVv%2Bsk4woLI",
+									"key": "sails.sid"
+								}
+							],
+							"body": "{\"valid\":false}"
 						}
 					]
 				},
@@ -3390,7 +3239,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/format?timestamp=2016-10-10&format=mm",
 							"protocol": "https",
@@ -3437,7 +3289,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/unit?timestamp=2016-10-10&unit=day",
 							"protocol": "https",
@@ -3482,7 +3337,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/add?timestamp=2016-10-10&years=100",
 							"protocol": "https",
@@ -3527,7 +3385,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/subtract?timestamp=2016-10-10&years=100",
 							"protocol": "https",
@@ -3572,7 +3433,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/start?timestamp=2016-10-10&unit=month",
 							"protocol": "https",
@@ -3617,7 +3481,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/start?timestamp=2016-10-10&unit=month",
 							"protocol": "https",
@@ -3663,7 +3530,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/before?timestamp=2016-10-10&target=2017-10-10",
 							"protocol": "https",
@@ -3709,7 +3579,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/after?timestamp=2016-10-10&target=2017-10-10",
 							"protocol": "https",
@@ -3737,56 +3610,6 @@
 					"response": []
 				},
 				{
-					"name": "Between timestamps",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": [
-									"var after = JSON.parse(responseBody).after;",
-									"",
-									"tests[\"Status code is 200\"] = responseCode.code === 200;",
-									"tests[\"Comparsion was correct\"] = after === false;"
-								]
-							}
-						}
-					],
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {},
-						"url": {
-							"raw": "https://postman-echo.com/time/between?timestamp=2016-10-10&start=2017-10-10&end=2019-10-10",
-							"protocol": "https",
-							"host": [
-								"postman-echo",
-								"com"
-							],
-							"path": [
-								"time",
-								"between"
-							],
-							"query": [
-								{
-									"key": "timestamp",
-									"value": "2016-10-10"
-								},
-								{
-									"key": "start",
-									"value": "2017-10-10"
-								},
-								{
-									"key": "end",
-									"value": "2019-10-10"
-								}
-							]
-						},
-						"description": "A simple `GET` request to `/time/between` to check if the provided timestamp is between a range specified by the `start` and `end` query parameters. A resolution limit can also be specified by the `unit` query parameter.\n\nFor instance, for a resolution `unit` of `month`,\n`2016-10-05` does lie between `2016-11-02` and `2016-09-01`.\n\nThis endpoint also accepts `timestamp`, `locale`, `format`, `strict`, and `target` query parameters to construct the date time instance to check against.\n\nResponses are provided in JSON format, with a `between` key to indicate the result. The response code is `200` for valid query parameters, and `400` otherwise.\n\n```\n{\n  between: true/false\n}\n```"
-					},
-					"response": []
-				},
-				{
 					"name": "Leap year check",
 					"event": [
 						{
@@ -3803,7 +3626,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "https://postman-echo.com/time/leap?timestamp=2016-10-10",
 							"protocol": "https",
@@ -3826,11 +3652,11 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "A set of `/time/*` mounted requests to perform date-time manipulations, among other operations.\n"
 		},
 		{
 			"name": "Utilities / Postman Collection",
-			"description": "",
 			"item": [
 				{
 					"name": "Transform collection from format v1 to v2",
@@ -3871,7 +3697,6 @@
 					},
 					"response": [
 						{
-							"id": "b06aef70-a270-459e-af0a-0a434e57c06e",
 							"name": "Sample v2 Response",
 							"originalRequest": {
 								"method": "POST",
@@ -3879,9 +3704,7 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json",
-										"enabled": true,
-										"description": "The mime type of this content",
-										"disabled": false
+										"description": "The mime type of this content"
 									}
 								],
 								"body": {
@@ -4002,7 +3825,7 @@
 							],
 							"cookie": [
 								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"httpOnly": true,
 									"domain": "postman-echo.com",
 									"path": "/",
@@ -4054,7 +3877,6 @@
 					},
 					"response": [
 						{
-							"id": "be8487f6-3472-4da5-8c51-0e14b52b30cc",
 							"name": "Sample v1 Response",
 							"originalRequest": {
 								"method": "POST",
@@ -4062,9 +3884,7 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json",
-										"enabled": true,
-										"description": "The mime type of this content",
-										"disabled": false
+										"description": "The mime type of this content"
 									}
 								],
 								"body": {
@@ -4185,7 +4005,7 @@
 							],
 							"cookie": [
 								{
-									"expires": "Tue Jan 19 2038 04:44:07 GMT+0700 (WIB)",
+									"expires": "Invalid Date",
 									"httpOnly": true,
 									"domain": "postman-echo.com",
 									"path": "/",
@@ -4224,7 +4044,10 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "{{base_url}}/get",
 					"host": [
